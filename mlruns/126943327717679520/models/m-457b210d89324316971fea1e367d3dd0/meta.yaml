@@ -1,0 +1,10 @@
+artifact_location: file:///content/mlruns/126943327717679520/models/m-457b210d89324316971fea1e367d3dd0/artifacts
+creation_timestamp: 1754627860343
+experiment_id: '126943327717679520'
+last_updated_timestamp: 1754627863652
+model_id: m-457b210d89324316971fea1e367d3dd0
+model_type: null
+name: regressor
+source_run_id: 7000ab6a4f454b6e87eb4d02a329a176
+status: 2
+status_message: null

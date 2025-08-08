@@ -1,0 +1,10 @@
+artifact_location: file:///content/mlruns/126943327717679520/models/m-abb8d02037514f5abf988ac2279f4acc/artifacts
+creation_timestamp: 1754627873743
+experiment_id: '126943327717679520'
+last_updated_timestamp: 1754627877796
+model_id: m-abb8d02037514f5abf988ac2279f4acc
+model_type: null
+name: classifier
+source_run_id: 0b27d2c87aee4260b24b6aa56ac9b6f8
+status: 2
+status_message: null

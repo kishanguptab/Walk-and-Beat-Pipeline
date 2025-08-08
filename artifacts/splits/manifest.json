@@ -1,0 +1,34 @@
+{
+  "pc_columns": [
+    "PC1",
+    "PC2",
+    "PC3",
+    "PC4",
+    "PC5",
+    "PC6"
+  ],
+  "paths": {
+    "X_test_parquet": "/content/drive/MyDrive/Walk and Beat/artifacts/splits/X_test.parquet",
+    "X_test_csv": "/content/drive/MyDrive/Walk and Beat/artifacts/splits/X_test.csv",
+    "y_reg_test_csv": "/content/drive/MyDrive/Walk and Beat/artifacts/splits/y_reg_test.csv",
+    "y_class_test_csv": "/content/drive/MyDrive/Walk and Beat/artifacts/splits/y_class_test.csv",
+    "test_rows_parquet": "/content/drive/MyDrive/Walk and Beat/artifacts/splits/test_rows.parquet",
+    "test_index_npy": "/content/drive/MyDrive/Walk and Beat/artifacts/splits/test_index.npy",
+    "best_regressor_pkl": "/content/drive/MyDrive/Walk and Beat/artifacts/best_regressor.pkl",
+    "best_classifier_pkl": "/content/drive/MyDrive/Walk and Beat/artifacts/best_classifier.pkl",
+    "scaler_pkl": "/content/drive/MyDrive/Walk and Beat/artifacts/scaler.pkl",
+    "pca_pkl": "/content/drive/MyDrive/Walk and Beat/artifacts/pca.pkl",
+    "features_pca_parquet": "/content/drive/MyDrive/Walk and Beat/artifacts/features_pca.parquet",
+    "metrics_test_csv": "/content/drive/MyDrive/Walk and Beat/artifacts/eval/metrics_test.csv",
+    "cv_metrics_csv": "/content/drive/MyDrive/Walk and Beat/artifacts/eval/cv_metrics.csv",
+    "best_run_txt": "/content/drive/MyDrive/Walk and Beat/artifacts/best_run.txt"
+  },
+  "shapes": {
+    "X_test": [
+      2167,
+      6
+    ],
+    "y_reg_test": 2167,
+    "y_class_test": 2167
+  }
+}

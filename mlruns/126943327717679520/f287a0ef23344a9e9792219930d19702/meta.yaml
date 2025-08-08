@@ -1,0 +1,14 @@
+artifact_uri: file:///content/mlruns/126943327717679520/f287a0ef23344a9e9792219930d19702/artifacts
+end_time: 1754629320772
+entry_point_name: ''
+experiment_id: '126943327717679520'
+lifecycle_stage: active
+run_id: f287a0ef23344a9e9792219930d19702
+run_name: RF_grid_search_parent
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754629224435
+status: 3
+tags: []
+user_id: root
