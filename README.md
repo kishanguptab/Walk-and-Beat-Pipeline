@@ -68,3 +68,40 @@ artifacts/eval/iter2_hmm_recommendations.parquet
 artifacts/eval/iter2_hmm_user_metrics.csv
 
 If best_classifier.pkl is present, prints a classification report and confusion matrix
+
+Recommendation Iterations
+Iteration 1 — Direct: window-level cadence → pick nearest-BPM song (±10).
+Great cadence fit, but too many switches (≈ one every 5 s).
+
+Iteration 2 — HMM + Duration FSM:
+
+Discretize cadence into states {slow_walk, fast_walk, jog}
+
+Learn transition matrix on predicted state sequences
+
+Viterbi smoothing (reduce jitter)
+
+Change song only on robust state change or song end
+Result: ~6.3 switches/session, ~143 s segments; moderate cadence fit—acceptable UX trade-off for POC.
+
+Example Results (from our runs)
+Step Rate Regression (Test): MAE ≈ 4.29 spm, CWA±10% ≈ 98.7%, CER>25% ≈ 0.18%
+
+Activity Classification (Test): Accuracy ≈ 0.993, F1 (weighted) ≈ 0.993
+
+Iteration-1: Cadence-fit ≈ 1.00, ~200 switches/session, mean segment ≈ 5 s
+
+Iteration-2 (HMM): Cadence-fit ≈ 0.52, ~6.3 switches/session, mean segment ≈ 143 s
+
+MLflow
+Experiment name: cadence_activity_modeling
+
+We run a tiny RF grid (n_estimators, max_depth) and log:
+
+validation MAE (regression), validation accuracy (classification)
+
+models as artifacts (best are also dumped to artifacts/)
+
+Start the UI locally:
+
+mlflow ui --backend-store-uri mlruns
