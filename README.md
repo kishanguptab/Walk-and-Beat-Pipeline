@@ -47,11 +47,11 @@ MLflow runs under mlruns/
 Plots saved to figures/
 
 2) Evaluate Only 
-Open notebooks/*eval.ipynb and run all cells. It does not train. It:
+Open notebooks/*eval.ipynb and run all cells after getting the entire git repositry to google drive and run the code on Colab. It does not train. It:
 
 Loads models & eval splits from artifacts/
 
-Builds the music catalog (song_df) from Spotify CSVs
+Builds the music catalog (song_df) from Song CSV
 
 Runs Iteration-1 (direct BPM match) + Iteration-2 (HMM + duration FSM)
 
